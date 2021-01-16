@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@700&display=swap');
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+  padding-left: 4px;
+}
+.App {  
+  background-color: #181719;
+  color: white;
+}
+body{
+  background-color: #181719; 
+}
+.navbar{
+  display: flex;
+  overflow: hidden;
+  background-color: #181719;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 171px;
+  align-items:  baseline;
+}
+.navbar-bar a.item{
+  padding: 14px 86px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+.navbar-logo p{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  margin-left: 85px;
+  padding: 8px;
+}
+.menu{
+  display: none;
+  cursor: pointer;
+}
+.b1,.b2,.b3{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .b1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .b2 {
+  opacity: 0;
+}
+.change .b3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info{
+  display: flex;
+  flex-direction:  column;
+}
+.info p{
+  font-family: 'Montserrat', serif;
+  font-size: 24px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom:48px; 
+}
+.info h1{
+  font-family: 'Lora', serif;
+  font-size: 48px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom:48px;  
+}
+.image{
+  width: 821px;
+  height: 586px;
+}
+.content-img{
+  position: relative;
+}
+.perfil{
+  position: absolute;
+  top: 80%;
+  right: 6%;
+  width: 410px;
+  height: 189px;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #181719;
+}
+.perfil-det{
+  display: flex;
+  flex-direction: row;  
+  justify-content: flex-start;
+  padding: 16px 0 0 16px;
+}
+.description{
+  padding: 0 97px 0px 25px;
+  font-family: 'Lora',serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.img-perfil{
+  border-radius: 50%;
+  margin-right: 15px;
+  width:18%;
+}
+.menu-visible{
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+  margin-top: 25%;
+}
+.menu-visible a{
+  font-family: 'Montserrat',serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar{
+    padding-bottom: 38px;
+    align-items:  flex-start;
+  }
+  .navbar-bar a{
+    display: none;
+  }
+  .navbar-logo p{
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .content{
+    justify-content: flex-start;
+  }
+  .info h1{
+    font-size: 36px;
+  }
+  .info p{
+    font-size: 14px;
+  }
+  .btn{
+    margin-bottom: 25px;
+  }
+  .image{
+    width: 391px;
+    height: 279px;
+  }
+  .perfil{
+    width: 300px;
+    height: 138px;
+  }
+  .description{
+    padding: 0 70px 0px 19px;
+    font-family: 'Lora',serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .img-perfil{
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: 20px;
+    width:12%;
+    height: 50%;
+  }
+  .menu{
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*@media only screen and (min-width: 600px) {...}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+/*@media only screen and (min-width: 768px) {...}*/
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
